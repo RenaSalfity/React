@@ -6,7 +6,7 @@ function Footer() {
       <div className="container ">
         <div className="footer__wrap"></div>
       </div>
-      <span>&copy;All rights reserved</span>
+      <span>&copy;All rights reserved קאסם חליליה--רינה סלפיתי </span>
     </footer>
   );
 }
