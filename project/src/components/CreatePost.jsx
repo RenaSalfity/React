@@ -49,6 +49,17 @@ function CreatePost() {
     }
     setMsg({classText:'success',text:'Post created successfully.'});
     console.log("New Post:", cleanedPost);
+      // **Reset input fields after submission**
+  setNewPost({
+    title: "",
+    author: "",
+    content: "",
+    image: "",
+  });
+
+  // Optional: Delay navigation after showing success message
+  setTimeout(() => navigate("/"), 5000);
+
     // Go back to the main page
     // navigate('/');
   };
