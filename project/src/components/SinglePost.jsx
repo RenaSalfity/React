@@ -14,6 +14,7 @@ function SinglePost() {
 
   return (
     <section className="post main">
+      {post &&(
       <div className="container">
         <div className="single-post">
           <h1 className="post-title">{post.title}</h1>
@@ -21,6 +22,7 @@ function SinglePost() {
           <p className="post-content">{post.content}</p>
         </div>
       </div>
+      )}
     </section>
   );
 }

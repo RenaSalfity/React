@@ -29,13 +29,14 @@ function MainPage() {
   ];
 
   return (
+    
     <div className="main">
       <section className="articles">
         <div className="container">
           <h1 className="main-page-title">שירותים</h1>
-          {/* <div className='d-flex'>
+          {<div className='d-flex'>
                 <Link to="/newpost" className="btn">new Post</Link>
-            </div> */}
+            </div> }  
           <div className="articles-container">
             {/* {articles&&articles.map((article) => (
                 <div key={article.id} className="article-card">
@@ -60,6 +61,13 @@ function MainPage() {
                     className="view-button"
                   >
                     לזימון תור
+                  </Link>
+                  <Link
+                    to={`/editpost/${article.id}`}
+                    state={{ post: article }}
+                    className="view-button"
+                  >
+                    עריכה
                   </Link>
                 </div>
               ))}
